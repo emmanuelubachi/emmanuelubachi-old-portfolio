@@ -10,8 +10,8 @@
           "url": "https://emmanuelubachi.github.io"
         }
       ],
-      "contents": "\r\nImport data\r\n\r\n\r\n\r\nIris Exploration\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-04T22:54:15+04:00"
+      "contents": "\r\nImport data\r\n\r\n\r\niris_clean <- read_csv(\"iris_clean.csv\")\r\n\r\n\r\n\r\n\r\nplot <- iris_clean %>%\r\n  ggplot(aes(x = petal_width, y = petal_length, color = species)) +\r\n  geom_point() +\r\n  scale_color_viridis_d() +\r\n  theme_light()\r\n  \r\nggplotly(plot)\r\n\r\n\r\n\r\n\r\n\r\ndata <- iris |>\r\n  group_by(Species) |>\r\n  summarise(\r\n    mean_Sepal.Length = mean(Sepal.Length),\r\n    .groups = \"drop\"\r\n  )\r\n\r\ndata |>\r\n  e_charts(x = Species) |>\r\n  e_bar(serie = mean_Sepal.Length) |>\r\n  e_tooltip(trigger = \"item\")\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-05T00:55:50+04:00"
     }
   ],
   "collections": []
