@@ -1,0 +1,18 @@
+{
+  "articles": [
+    {
+      "path": "index.html",
+      "title": "Iris",
+      "description": "Just testing out R on a static website!\n",
+      "author": [
+        {
+          "name": "Emmanuel Ubachi",
+          "url": "https://emmanuelubachi.github.io"
+        }
+      ],
+      "contents": "\r\nImport data\r\n\r\n\r\n\r\nIris Exploration\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-04T22:54:15+04:00"
+    }
+  ],
+  "collections": []
+}
